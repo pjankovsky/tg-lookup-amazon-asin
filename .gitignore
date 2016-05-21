@@ -1,0 +1,10 @@
+# Intellij
+.idea
+*.iml
+
+# node-lambda
+.env
+context.json
+deploy.env
+event.json
+
