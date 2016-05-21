@@ -1,0 +1,19 @@
+{
+  "name": "tg-lookup-amazon-asin",
+  "version": "1.0.0",
+  "description": "Use the Amazon Product Advertising API to lookup full ASIN data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjankovsky/tg-lookup-amazon-asin.git"
+  },
+  "author": "Peter <peter@jankovsky.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pjankovsky/tg-lookup-amazon-asin/issues"
+  },
+  "homepage": "https://github.com/pjankovsky/tg-lookup-amazon-asin#readme"
+}
