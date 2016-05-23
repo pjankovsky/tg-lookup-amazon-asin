@@ -1,5 +1,5 @@
 'use strict';
-let config = require('tb-node-lib/lib/config').getAllConfig();
+let config = require('tg-node-lib/lib/config').getAllConfig();
 let Sequelize = require('sequelize');
 let db = new Sequelize(config['db.product.database'], config['db.product.user'], config['db.product.password'], {
     host: config['db.product.host'],
