@@ -1,4 +1,6 @@
 'use strict';
+global.CONFIG_FILE_PATH = __dirname + '/config.json';
+
 const LOOKUP_QUEUE_URL = 'https://sqs.us-west-2.amazonaws.com/810415707352/product_lookup_asin';
 
 const SEARCH_HOSTNAME = 'webservices.amazon.com';
