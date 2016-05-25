@@ -22,7 +22,7 @@ let timeout = 0;
 let recentlyAddedASINs = {};
 
 exports.handler = (event, context, callback) => {
-    timeout = Date.now() + 300000; // 5m
+    timeout = Date.now() + 285000; // 4m45
     recentlyAddedASINs = {};
     // setup returns a promise
     // doing setup each instance might be overkill, but it is better than doing it every time a table is loaded
