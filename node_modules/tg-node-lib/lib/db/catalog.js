@@ -15,7 +15,7 @@ let _init = function () {
         let db = new Sequelize(config['db.catalog.database'], config['db.catalog.user'], config['db.catalog.password'], {
             host: config['db.catalog.host'],
             dialect: 'mysql',
-            logging: null,
+            // logging: null,
             pool: {
                 maxConnections: 50,
                 minConnections: 0,
@@ -403,6 +403,7 @@ let _init = function () {
 module.exports = {
     setup: () => {
         // always return a promise
+        console.log('- Startup DB');
         return _init()
             .then(() => Product.sync())
             .then(() => {
