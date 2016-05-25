@@ -8,7 +8,7 @@ let flattenCategory = function (root) {
     if (typeof root.Ancestors == 'undefined')
         return name;
     return flattenCategory(root.Ancestors.BrowseNode) + CATEGORY_SEPARATOR + name;
-}
+};
 
 let _init = function () {
     return require('tg-node-lib/lib/config').getAllConfig().then((config) => {

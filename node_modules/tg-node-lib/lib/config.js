@@ -7,6 +7,7 @@
 
     module.exports = {
         getAllConfig: function () {
+            console.log('- Loading All Config');
             return new Promise(function (resolve, reject) {
                 // grab the whole table
                 dynamodb.scan({
@@ -26,6 +27,7 @@
 
         },
         getConfig: function (configKey) {
+            console.log('- Loading Config - ' + configKey);
             return new Promise(function (resolve, reject) {
                 // grab just a single key
                 var value = null;
