@@ -8,6 +8,8 @@
         var name = root.Name;
         if (typeof root.Ancestors == 'undefined')
             return name;
+        if (root.IsCategoryRoot == "1")
+            return name;
         return flattenCategory(root.Ancestors.BrowseNode) + CATEGORY_SEPARATOR + name;
     };
 
