@@ -131,7 +131,7 @@ function lookup(asin) {
             Timestamp: amazonSignature.getSigningTimestamp()
         };
 
-        params.Signature = amazonSignature.getSignature('GET', SEARCH_HOSTNAME, SEARCH_PATH, querystring.stringify(params), AWS_SECRET_KEY);
+        params.Signature = amazonSignature.getSignature('GET', SEARCH_HOSTNAME, SEARCH_PATH, params, AWS_SECRET_KEY);
 
         var req = http.request({
             hostname: SEARCH_HOSTNAME,
